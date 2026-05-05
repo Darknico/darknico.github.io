@@ -1,1 +1,19 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: Darknico
+email: info@darknico.com
+description: >- # this means to ignore newlines until "baseurl:"
+ Sviluppatore ed appassionato
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.darknico.com" 
+lang: it
+locale: it_IT
+social:
+  locale: it_IT
+
+# Social media usernames
+github_username: Darknico
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed

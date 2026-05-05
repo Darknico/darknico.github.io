@@ -1,3 +1,43 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+body {
+  background: #181a1b;
+  color: #eaeaea;
+  font-family: 'Fira Mono', 'JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Fira Mono', 'JetBrains Mono', monospace;
+  font-weight: 700;
+}
+
+.page-link:link, .page-link:visited {
+  color: #00bfff;
+  margin-right: 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.2s;
+}
+
+.page-link:hover {
+  color: #00bfff;
+}
+
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 32px;
+  background: #23272a;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.3);
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -36,46 +76,4 @@
   text-decoration: underline;
   font-size: 1em;
   font-weight: bold;
-}
-body {
-  background: #181a1b;
-  color: #eaeaea;
-  font-family: 'Fira Mono', 'JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 700px;
-  margin: 60px auto;
-  padding: 32px;
-  background: #23272a;
-  border-radius: 12px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.3);
-}
-
-h1, h2 {
-  font-family: 'Fira Mono', 'JetBrains Mono', monospace;
-  font-weight: 700;
-}
-
-.lang-switch {
-  float: right;
-  margin-top: 8px;
-}
-
-.social {
-  margin-top: 24px;
-}
-
-.social a {
-  color: #eaeaea;
-  margin-right: 16px;
-  text-decoration: none;
-  font-size: 1.2em;
-  transition: color 0.2s;
-}
-
-.social a:hover {
-  color: #00bfff;
 }

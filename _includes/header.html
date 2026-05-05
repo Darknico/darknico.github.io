@@ -1,0 +1,16 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    <div style="display:flex; justify-content:center; margin:24px 0;">
+      <div style="background:#23272a; border-radius:50%; box-shadow:0 2px 12px #0004; padding:11px 14px 5px 14px; display:inline-block;">
+        <img src="/assets/img/avatar_darknico.png" alt="Avatar Darknico" style="width:80px; height:80px; border-radius:50%; border:3px solid #181a1b; display:block;">
+      </div>
+      <div>
+        <h1 style="text-align:center; letter-spacing:2px;">{{ site.title | escape }}</h1>
+        <h3>{{ site.description | escape }}</h3>
+      </div>
+    </div>
+  </div>
+</header>
