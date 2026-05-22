@@ -17,3 +17,9 @@ github_username: Darknico
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-polyglot
+
+# Localization settings for polyglot
+languages: ["it", "en"]
+default_lang: "it"
+exclude_from_localization: ["javascript", "images", "assets", "css"]
