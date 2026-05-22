@@ -3,9 +3,10 @@ permalink: /404.html
 layout: home
 ---
 
+{% assign t = site.data[site.active_lang] %}
 <div class="container">
   <h1>404</h1>
 
-  <p><strong>Pagina non trovata :(</strong></p>
-  <p>La pagina richiesta non è stata trovata.</p>
+  <p><strong>{{ t.error404.title }} :(</strong></p>
+  <p>{{ t.error404.description }}</p>
 </div>

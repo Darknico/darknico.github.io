@@ -1,4 +1,5 @@
 ---
+permalink: /
 layout: home
 ---
 {% assign t = site.data[site.active_lang] %}

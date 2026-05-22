@@ -1,5 +1,8 @@
 header:
   description: "Sviluppatore ed appassionato"
+error404:
+  title: "Pagina non trovata"
+  description: "La pagina che stai cercando non esiste o è stata spostata."
 home:
   welcome: "Benvenuto nel mio sito!"
   projects: "PROGETTI E SVILUPPI"
