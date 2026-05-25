@@ -7,7 +7,7 @@
         <a href="{{ site.url }}"" title="Italiano">
           <img src="/assets/img/flags/it.png" alt="Italiano" style="width:28px; height:20px; border-radius:3px; border:1px solid #ccc; box-shadow:0 1px 4px #0002;">
         </a>
-        <a href="{{ site.url }}/en" title="English">
+        <a href="/en{{ page.url | remove_first: '/en' }}" title="English">
           <img src="/assets/img/flags/gb.png" alt="English" style="width:28px; height:20px; border-radius:3px; border:1px solid #ccc; box-shadow:0 1px 4px #0002;">
         </a>
       </div>
