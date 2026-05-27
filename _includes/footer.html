@@ -5,19 +5,44 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-       
+
       </div>
 
       <div class="footer-col footer-col-2">
    
+        <div class="lang-dropdown-container" data-initial-lang="{{ page.lang | default: site.lang | default: 'it' }}" >
+          <div class="lang-dropdown" aria-label="{{ t.footer.langDropdownLabel | escape }}" role="button" tabindex="0">
+            <button class="lang-btn" aria-haspopup="true" aria-expanded="false" type="button">
+              <img src="/assets/img/flags/{{ t.footer.lang }}.png" alt="{{ t.footer.langLabel }}" width="28" height="20" />
+              <span class="lang-chev">▾</span>
+            </button>
+            <ul class="lang-menu" hidden>
+              <li>
+                <a href="{{ site.url | remove_first: '/en' }}" title="Italiano">
+                  <img src="/assets/img/flags/it.png" alt="Italiano" width="20" height="14" />
+                  Italiano
+                </a>
+              </li>
+              <li>
+                <a href="/en{{ page.url | remove_first: '/en' }}" title="English">
+                  <img src="/assets/img/flags/gb.png" alt="English" width="20" height="14" />
+                  English
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
 
       <div class="footer-col footer-col-3">
 
       </div>
-      <div style="text-align:center; color:#888; font-size:0.8em;">
-          Copyright &copy; {{ site.time | date: '%Y' }} <b>Darknico</b> - All rights reserved.
-      </div>
+
+    </div>
+
+    <div style="text-align:center; color:#888; font-size:0.8em;">
+      Copyright &copy; {{ site.time | date: '%Y' }} <b>Darknico</b> - All rights reserved.
     </div>
 
   </div>

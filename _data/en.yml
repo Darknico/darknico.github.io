@@ -1,7 +1,9 @@
 header:
   description: "Developer and enthusiast"
+footer:    
   lang: "gb"
   langLabel: "English"
+  langDropdownLabel: "Select language"
 error404:
   title: "Page not found"
   description: "The page you are looking for does not exist or has been moved."

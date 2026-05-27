@@ -1,7 +1,9 @@
 header:
   description: "Sviluppatore ed appassionato"
+footer:  
   lang: "it"
   langLabel: "Italiano"
+  langDropdownLabel: "Seleziona lingua"
 error404:
   title: "Pagina non trovata"
   description: "La pagina che stai cercando non esiste o è stata spostata."

@@ -2,29 +2,6 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-
-    <div class="lang-dropdown-container" data-initial-lang="{{ page.lang | default: site.lang | default: 'it' }}" style="position:absolute; top:24px; right:32px; z-index:10;">
-      <div class="lang-dropdown" aria-label="Selettore lingua">
-        <button class="lang-btn" aria-haspopup="true" aria-expanded="false" type="button">
-          <img src="/assets/img/flags/{{ t.header.lang }}.png" alt="{{ t.header.langLabel }}" width="28" height="20" />
-          <span class="lang-chev">▾</span>
-        </button>
-        <ul class="lang-menu" hidden>
-          <li>
-            <a href="{{ site.url | remove_first: '/en' }}" title="Italiano">
-              <img src="/assets/img/flags/it.png" alt="Italiano" width="20" height="14" />
-              Italiano
-            </a>
-          </li>
-          <li>
-            <a href="/en{{ page.url | remove_first: '/en' }}" title="English">
-              <img src="/assets/img/flags/gb.png" alt="English" width="20" height="14" />
-              English
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
     <div style="display:flex; justify-content:center; margin:24px 0;">
       <div style="background:#23272a; border-radius:50%; box-shadow:0 2px 12px #0004; padding:11px 14px 5px 14px; display:inline-block;">
         <a href="{{ site.baseurl }}/" style="display:block; width:100%; height:100%;">
