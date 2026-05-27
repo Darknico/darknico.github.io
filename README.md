@@ -1,7 +1,8 @@
-Pagina personale, sviluppato con Jekyll e pubblicato tramite GitHub Pages.
+## Darknico
+Personal page, built with Jekyll and published via GitHub Pages.
 
-## Descrizione
-Contiene una breve presentazione e una sezione portfolio con i principali progetti
+## Description
+Contains a short introduction and a portfolio section with the main projects.
 
-## Licenza
+## License
 MIT License
