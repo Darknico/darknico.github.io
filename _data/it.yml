@@ -1,5 +1,7 @@
 header:
   description: "Sviluppatore ed appassionato"
+  lang: "it"
+  langLabel: "Italiano"
 error404:
   title: "Pagina non trovata"
   description: "La pagina che stai cercando non esiste o è stata spostata."

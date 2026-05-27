@@ -2,14 +2,27 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <div style="position:absolute; top:24px; right:32px; z-index:10;">
-      <div style="display:flex; gap:8px; align-items:center;">
-        <a href="{{ site.url }}"" title="Italiano">
-          <img src="/assets/img/flags/it.png" alt="Italiano" style="width:28px; height:20px; border-radius:3px; border:1px solid #ccc; box-shadow:0 1px 4px #0002;">
-        </a>
-        <a href="/en{{ page.url | remove_first: '/en' }}" title="English">
-          <img src="/assets/img/flags/gb.png" alt="English" style="width:28px; height:20px; border-radius:3px; border:1px solid #ccc; box-shadow:0 1px 4px #0002;">
-        </a>
+
+    <div class="lang-dropdown-container" data-initial-lang="{{ page.lang | default: site.lang | default: 'it' }}" style="position:absolute; top:24px; right:32px; z-index:10;">
+      <div class="lang-dropdown" aria-label="Selettore lingua">
+        <button class="lang-btn" aria-haspopup="true" aria-expanded="false" type="button">
+          <img src="/assets/img/flags/{{ t.header.lang }}.png" alt="{{ t.header.langLabel }}" width="28" height="20" />
+          <span class="lang-chev">▾</span>
+        </button>
+        <ul class="lang-menu" hidden>
+          <li>
+            <a href="{{ site.url | remove_first: '/en' }}" title="Italiano">
+              <img src="/assets/img/flags/it.png" alt="Italiano" width="20" height="14" />
+              Italiano
+            </a>
+          </li>
+          <li>
+            <a href="/en{{ page.url | remove_first: '/en' }}" title="English">
+              <img src="/assets/img/flags/gb.png" alt="English" width="20" height="14" />
+              English
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <div style="display:flex; justify-content:center; margin:24px 0;">
