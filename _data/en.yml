@@ -8,7 +8,6 @@ error404:
   title: "Page not found"
   description: "The page you are looking for does not exist or has been moved."
 home:
-  welcome: "Welcome to my website!"
   projects: "PROJECTS AND DEVELOPMENTS"
   visit: "VISIT"
   githubDescription: "My public repositories"

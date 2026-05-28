@@ -3,7 +3,6 @@ permalink: /
 layout: home
 ---
 {% assign t = site.data[site.active_lang] %}
-<h2>{{ t.home.welcome }}</h2>
 <section class="container" style="margin-top:40px;">
   <h2 style="text-align:center;">{{ t.home.projects }}</h2>
   <div class="portfolio">
