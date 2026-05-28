@@ -7,6 +7,22 @@ layout: home
 <div class="container">
   <h1>404</h1>
 
-  <p><strong>{{ t.error404.title }} :(</strong></p>
-  <p>{{ t.error404.description }}</p>
+  <p><strong id="error404-title">{{ t.error404.title }} :(</strong></p>
+  <p id="error404-description">{{ t.error404.description }}</p>
 </div>
+
+<script>
+  (function(){
+    var path = window.location.pathname || '';
+    var isEnglish = path.split('/')[1] === 'en';
+    if (!isEnglish) return;
+
+    var title = {{ site.data.en.error404.title | jsonify }};
+    var description = {{ site.data.en.error404.description | jsonify }};
+
+    var titleEl = document.getElementById('error404-title');
+    var descEl = document.getElementById('error404-description');
+    if (titleEl) titleEl.textContent = title + ' :(';
+    if (descEl) descEl.textContent = description;
+  })();
+</script>
